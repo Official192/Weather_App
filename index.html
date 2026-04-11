@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="shortcut icon" href="Favicon.ico" type="image/x-icon">
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   <script src="https://cdn.tailwindcss.com"></script>
+
+   <style>
+    input{
+        width: 200px;
+    }
+   </style>
+   
+</head>
+
+<body class="bg-gray-300">
+
+
+    <main class="w-full max-w-[370px] flex-col bg-gray-800 flex justify-start p-4 rounded-lg" style="height: 550px; ">
+<h1 class="text-center text-3xl text-red-300 mt-3">Check Weather!</h1>
+        <section class="flex justify-center items-start w-full mt-10 text-white">
+            
+  <input type="text" id="input" class="rounded-l h-full bg-gray-700" placeholder=" Search Your Location...">
+  <button onclick="check()" class=" bg-red-600 px-2 p-1 rounded-r">Search</button>
+        </section>
+
+        <section id="data-container" class="text-white" style="justify-content: center; display: flex;"></section>
+    </main>
+
+    
+<script src="script.js"></script>
+
+
+</body>
+</html>
