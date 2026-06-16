@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Openweather App</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="shortcut icon" href="Favicon.ico" type="image/x-icon">
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="bg-gray-900">
+
+
+    <main class="w-full max-w-[370px] flex-col h-full max-h-[720px] flex rounded-xl shadow-xl bg-white/5" >
+        <div class="w-40 flex mt-4">
+<img src="logo_white.webp" class="mx-7" width="130" alt=""> 
+</div>
+
+
+        <section class="flex justify-center mt-8 text-white pb-5">
+            
+  <input type="text" id="input" class="rounded-l p-1 h-8 bg-gray-700" placeholder="Search Your Location">
+
+  <button onclick="check()" class="bg-blue-600 p-1 px-2 rounded-r">Search</button>
+
+        </section>
+
+        <section id="data-container" class="text-white" style="justify-content: center; display: flex;"></section>
+    </main>
+
+
+    
+    <script src="config.js"></script>
+<script src="script.js"></script>
+
+
+
+</body>
+</html>
+
