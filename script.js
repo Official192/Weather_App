@@ -2,7 +2,6 @@ const datacontainer = document.getElementById("data-container");
 const input = document.getElementById("input");
 const apikey = API_KEY;
 
-
   async function check() {
 
     if(input.value == "") {
@@ -80,6 +79,11 @@ datacontainer.innerHTML = `
     } catch (error) {
       document.write(error);
     }
-
  
 }
+
+window.addEventListener("keydown",(e)=>{
+  if(e.key == "Enter"){
+    check();
+  }
+});
